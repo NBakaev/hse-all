@@ -1,0 +1,1 @@
+SELECT * from detail WHERE price < (SELECT avg(price) from detail )

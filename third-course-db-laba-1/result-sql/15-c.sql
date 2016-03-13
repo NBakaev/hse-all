@@ -1,0 +1,1 @@
+SELECT date from orders GROUP BY date HAVING MIN(price) > 10000;

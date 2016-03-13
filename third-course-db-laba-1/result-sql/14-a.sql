@@ -1,0 +1,1 @@
+SELECT sum(price) as all_orders_amount from orders WHERE customer in (SELECT id from customer WHERE address = 'Канавинский')
