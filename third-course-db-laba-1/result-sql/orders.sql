@@ -1,0 +1,17 @@
+INSERT INTO "orders" VALUES (1, 'Январь', 5, 4, 3, 7, '21000.00');
+INSERT INTO "orders" VALUES (2, 'Февраль', 3, 3, 3, 2, '6000.00');
+INSERT INTO "orders" VALUES (3, 'Февраль', 4, 5, 4, 200, '180000.00');
+INSERT INTO "orders" VALUES (4, 'Март', 5, 4, 2, 50, '50000.00');
+INSERT INTO "orders" VALUES (5, 'Апрель', 1, 6, 7, 110, '132000.00');
+INSERT INTO "orders" VALUES (6, 'Апрель', 4, 4, 1, 150, '750000.00');
+INSERT INTO "orders" VALUES (7, 'Май', 2, 4, 6, 20, '40000.00');
+INSERT INTO "orders" VALUES (8, 'Июнь', 1, 3, 7, 2000, '2400000.00');
+INSERT INTO "orders" VALUES (9, 'Июнь', 2, 5, 7, 10000, '12000000.00');
+INSERT INTO "orders" VALUES (10, 'Июнь', 3, 6, 1, 5, '25000.00');
+INSERT INTO "orders" VALUES (11, 'Июнь', 4, 3, 3, 1, '3000.00');
+INSERT INTO "orders" VALUES (12, 'Июнь', 4, 4, 1, 10, '50000.00');
+INSERT INTO "orders" VALUES (13, 'Июль', 1, 6, 6, 3, '6000.00');
+INSERT INTO "orders" VALUES (14, 'Июль', 2, 1, 2, 1000, '1000000.00');
+INSERT INTO "orders" VALUES (15, 'Июль', 2, 2, 1, 100, '5000000.00');
+INSERT INTO "orders" VALUES (16, 'Июль', 5, 1, 5, 100, '15000.00');
+INSERT INTO "orders" VALUES (17, 'Август', 1, 4, 7, 12000, '24400000.00');
