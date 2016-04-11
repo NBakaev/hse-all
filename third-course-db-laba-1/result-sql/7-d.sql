@@ -5,5 +5,6 @@ FROM
 "public".orders
 INNER JOIN "public".customer ON "public".orders.customer = "public".customer."id"
 WHERE
-"public".orders.detail = 6
+"public".orders.detail = 
+	(SELECT id from detail WHERE name = 'Молоток')
 GROUP BY "public".customer."address"

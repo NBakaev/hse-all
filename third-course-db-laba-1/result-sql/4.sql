@@ -1,0 +1,1 @@
+SELECT DISTINCT commission FROM supplier
