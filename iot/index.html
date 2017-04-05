@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Party detector</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">-->
+    <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">-->
+    <!--<link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">-->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="bower_components/toastr/toastr.min.css">-->
+    <!--<link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css">-->
+    <!--<link rel='stylesheet' href='node_modules/textangular/dist/textAngular.css'>-->
+    <!--<link rel='stylesheet' href='node_modules/font-awesome/css/font-awesome.min.css'>-->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="assets/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="assets/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!--<link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='bower_components/'>
+
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<section layout="row" flex>
+<md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="true"
+        md-whiteframe="4">
+
+    <!--<md-toolbar class="md-theme-indigo" style="background-color: #8BC34A;">-->
+        <!--<h1 class="md-toolbar-tools">Menu</h1>-->
+    <!--</md-toolbar>-->
+
+
+</md-sidenav>
+
+<div ></div>
+
+<section layout="row" flex>
+
+    <md-content style="overflow: hidden;" flex layout-padding>
+        <div class="pull-left" >
+            <!--<md-button href="#/" style="padding: 0px; margin-top: -10px;">Главная страница</md-button>-->
+            </div>
+        <div layout="column" layout-fill layout-align="top left">
+
+
+
+            <!--<div ng-controller="HeaderController">-->
+
+                <!--<div class="pull-right" style="position: absolute; right: 80px !important; top: 0px;">-->
+                    <!--<div ng-if="!currentUser.username">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-6">-->
+                                <!--<md-button ng-click="registrateNewUser($event)">Зарегистрироваться-->
+                            <!--</div>-->
+                            <!--<div class="col-md-6">-->
+                                <!--<md-button ng-click="logIn($event)" class="pull-right">Вход</md-button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div ng-if="currentUser.username">-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-6">-->
+
+                                <!--<div class="row">-->
+                                    <!--<div class="col-md-6">-->
+                                        <!--<md-menu>-->
+                                            <!--<md-button class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)"-->
+                                                       <!--style="width: 90px;">-->
+                                                <!--<span><b>{{currentUser.customer.firstname || currentUser.username}}</b></span>-->
+                                            <!--</md-button>-->
+                                            <!--<md-menu-content width="4">-->
+                                                <!--<md-menu-item>-->
+                                                    <!--<md-button href="/#/purchase/my">-->
+                                                        <!--Мои заказы-->
+                                                    <!--</md-button>-->
+                                                <!--</md-menu-item>-->
+
+                                                <!--<md-menu-item>-->
+                                                    <!--<md-button href="/#/account/my">-->
+                                                        <!--Мой профиль-->
+                                                    <!--</md-button>-->
+                                                <!--</md-menu-item>-->
+                                            <!--</md-menu-content>-->
+                                        <!--</md-menu>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-md-6">-->
+                                        <!--<md-menu ng-if="hasRole('ROLE_ADMIN')">-->
+                                            <!--<md-button class="md-icon-button" ng-click="openMenu($mdOpenMenu, $event)"-->
+                                                       <!--style="width: 90px;">-->
+                                                <!--<span><b>Админ</b></span>-->
+                                            <!--</md-button>-->
+                                            <!--<md-menu-content width="4">-->
+                                                <!--<md-menu-item>-->
+                                                    <!--<md-button href="/#/account/all">-->
+                                                        <!--Все пользователи-->
+                                                    <!--</md-button>-->
+                                                <!--</md-menu-item>-->
+
+                                                <!--<md-menu-item>-->
+                                                    <!--<md-button href="/#/purchase/all">-->
+                                                        <!--Все заказа-->
+                                                    <!--</md-button>-->
+                                                <!--</md-menu-item>-->
+
+                                                <!--<md-menu-item>-->
+                                                    <!--<md-button href="/#/category/all">-->
+                                                        <!--Категории-->
+                                                    <!--</md-button>-->
+                                                <!--</md-menu-item>-->
+
+                                            <!--</md-menu-content>-->
+                                        <!--</md-menu>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-6">-->
+                                <!--<md-button ng-click="logOut($event)" class="pull-right">Выход</md-button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div ng-view></div>
+        </div>
+        <div flex></div>
+    </md-content>
+</section>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+</section>
+<script src="assets/upload/angular-file-upload-shim.min.js"></script>
+
+<script src="app/common.js"></script>
+<script src="assets/base64.min.js"></script>
+<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/toastr/toastr.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/main_page/main_page.js"></script>
+<script src="app/service.js"></script>
+<script src="app/service.api.js"></script>
+<!--<script src="app/main.ctrl.js"></script>-->
+<!--<script src="app/account/AccountController.js"></script>-->
+<!--<script src="assets/upload/angular-file-upload.js"></script>-->
+
+<!--<script src="bower_components/angular-material/angular-material.min.js"></script>-->
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<!--<script src="bower_components/angularUtils-pagination/dirPagination.js"></script>-->
+</body>
+</html>

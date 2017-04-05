@@ -1,0 +1,65 @@
+<md-dialog aria-label="Mango (Fruit)" ng-cloak>
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Регистрация нового пользователя</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+
+                <div>
+                    <md-input-container>
+                        <label>Email</label>
+                        <input ng-model="newUserAccountDTO.username" type="email">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs>
+                        <label>Пароль</label>
+                        <input ng-model="newUserAccountDTO.password" type="password">
+                    </md-input-container>
+                </div>
+                </md-content>
+                <md-content layout-padding>
+                    <div>
+                        <form name="userForm">
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Имя</label>
+                                    <input ng-model="newUserAccountDTO.customer.firstname">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Фамилия</label>
+                                    <input ng-model="newUserAccountDTO.customer.lastname">
+                                </md-input-container>
+                            </div>
+                            <md-input-container class="md-block">
+                                <label>Адрес</label>
+                                <input ng-model="user.address">
+                            </md-input-container>
+                            <md-input-container md-no-float class="md-block">
+                                <input ng-model="user.address2" placeholder="Address 2">
+                            </md-input-container>
+                            <div layout-gt-sm="row">
+                                <md-input-container class="md-block" flex-gt-sm>
+                                    <label>Город</label>
+                                    <input ng-model="newUserAccountDTO.customer.primaryAddress.city">
+                                </md-input-container>
+                            </div>
+
+                        </form>
+                    </div>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions layout="row">
+            <md-button ng-click="createNewUserAccount()"
+                       ng-disabled="newUserAccountDTO.username == '' || newUserAccountDTO.password == ''">
+                Зарегестрироваться
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

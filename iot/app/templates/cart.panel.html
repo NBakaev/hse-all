@@ -1,0 +1,30 @@
+<table class="table" ng-show="allGoodsInCart.goodList.length > 0">
+    <tr>
+        <th>Товар</th>
+        <th>Кол-во</th>
+        <th></th>
+    </tr>
+
+    <tr ng-repeat="good in allGoodsInCart.goodList">
+        <td>
+            <a href="/#/good/details/{{good.good.id}}">
+                {{good.good.name || 'noName'}}
+            </a>
+        </td>
+        <td>{{good.number}}</td>
+        <td>{{good.number * good.good.price}}</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td>{{allGoodsInCart.totalPrice}} руб.</td>
+    </tr>
+</table>
+
+<span ng-if="allGoodsInCart.goodList.length == 0">
+                Нет товаров в корзине. <br> Добавьте что-нибудь!
+            </span>
+
+<md-button ng-if="allGoodsInCart.goodList.length > 0" class="md-raised md-primary pull-right" ng-click="makePurchase()">Продолжить
+</md-button>
